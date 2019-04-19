@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Salary list</title>
+  </head>
+  <body>
+
+    <ul>
+    {% for month in salary_list %}
+      <li>
+        <h3><a href="{% url 'detail' month.slug %}">{{ month.month_name }}</a></h3>
+      </li>
+    {% endfor %}
+    </ul>
+  </body>
+  </html>

@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Expense detail</title>
+  </head>
+  <body>
+    <h1>Salary for this Month : {{ expense.salary }} </h1>
+    <ul>
+    {% for obj in expense_list %}
+      <li>
+      EXPENSE CATEGORY :  <h3>{{ obj.category }}</h3></br>
+        <ul><li>
+      EXPENSE AMOUNT: <h4>Rs{{ obj.amount }}</h4></br>
+        </li></ul>
+      </li>
+    {% endfor %}
+    </ul>
+    <h1> Salary Left : {{expense.salary_left}} </h1>
+  </body>
+  </html>

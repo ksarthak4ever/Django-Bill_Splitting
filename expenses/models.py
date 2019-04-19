@@ -15,7 +15,7 @@ class Salary(models.Model): #To store monthly salary of the user
 		return '{}'.format(self.month_name)
 
 	def salary_left(self):
-		expense_list = Expense.objects.filter(project=self)
+		expense_list = Expense.objects.filter(month=self)
 		total_expense_amount = 0
 		for expense in expense_list:
 			total_expense_amount += expense.amount

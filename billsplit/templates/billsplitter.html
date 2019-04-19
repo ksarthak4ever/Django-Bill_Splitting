@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Bill Splitting</title>
+  </head>
+  <body>
+    <form method="post">
+      {% csrf_token %}
+      <div>{{ form.as_p }}</div>
+      <button type="submit">Submit</button>
+    </form>
+  <h1>EVERY FRIEND HAVE TO PAY:  {{ answer }} </h1>
+  </body>
+  </html>
